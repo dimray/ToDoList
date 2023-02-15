@@ -1,0 +1,125 @@
+:root {
+  --font-color-light: #eee;
+  --font-color-med: #aaa;
+  --font-color-dark: #222;
+  --border-color: #222;
+  --background-light: #fef08a;
+  --background-light-hover: #fef08a;
+  --background-medium: #a16207;
+  --background-dark: #713f12;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  color: var(--font-color-med);
+  background-color: var(--background-dark);
+  height: 100%;
+}
+
+#content {
+  display: flex;
+}
+
+.innerContent {
+  flex-basis: 100%;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid red;
+
+}
+
+header {
+  background-color: var(--background-medium);
+  font-size: 2.4 rem;
+  color: var(--font-color-light);
+  height: 80px;
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 100px 0;
+  height: calc(100vh - 110px);
+  color: var(--font-color-dark);
+  display: grid;
+  /* grid-template-columns: repeat(2, clamp(150px, 50%, 500px)); */
+  justify-content: center;
+  align-content: start;
+  border: 2px solid white;
+}
+
+.sidebar {
+  color: var(--font-color-dark);
+  background-color: var(--background-light);
+  height: 100vh;
+  padding: 30px;
+}
+
+.footer {
+  background-color: var(--background-medium);
+  color: var(--font-color-light);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--border-color);
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: var(--font-color-light);
+  font-size: 2.4rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: var(--background-light-hover);
+  color: var(--font-color-dark);
+}
+
+.form {
+
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+
+}
+
+.form-item {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.form-label {
+  color: var(--font-color-light);
+  display: grid;
+}
+
+.checkbox {
+  margin-left: 10px;
+  accent-color: var(--background-dark);
+  width: 15px;
+  height: 15px;
+}
