@@ -30,6 +30,8 @@ body {
   height: 100%;
 }
 
+
+
 #content {
   display: flex;
 }
@@ -53,7 +55,7 @@ header {
   align-items: center;
 }
 
-main {
+.main {
   padding: 100px 0;
   height: calc(100vh - 110px);
   color: var(--font-color-dark);
@@ -69,6 +71,25 @@ main {
   background-color: var(--background-light);
   height: 100vh;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-btn {
+  background-color: var(--background-dark);
+  color: var(--font-color-light);
+  border: none;
+  font-size: 2.4rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.sidebar-btn:hover {
+
+  color: var(--font-color-dark);
+  background-color: transparent;
+
 }
 
 .footer {
@@ -95,13 +116,22 @@ main {
   color: var(--font-color-dark);
 }
 
-.form {
+.add-item-btn {
+  margin: 20px;
+}
 
-  justify-self: center;
+.category {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.form {
   display: grid;
+  justify-self: center;
   grid-template-columns: 100%;
   gap: 15px;
-
 }
 
 .form-item {
@@ -122,4 +152,42 @@ main {
   accent-color: var(--background-dark);
   width: 15px;
   height: 15px;
+}
+
+.list-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.listDisplayDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 5px;
+
+}
+
+.listItem {
+  color: var(--font-color-light);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.listBtn {
+  background-color: transparent;
+  border: none;
+  color: var(--font-color-light);
+  border-radius: 5px;
+  background-color: var(--background-light-hover);
+  color: var(--font-color-dark);
+  padding: 0 20px;
+}
+
+.listBtn:hover {
+  background-color: var(--background-medium);
+  color: var(--font-color-light);
+}
+
+.hidden {
+  display: none;
 }

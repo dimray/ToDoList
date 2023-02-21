@@ -15,7 +15,39 @@
 </head>
 
 <body>
-  <div id="content"></div>
+  <div id="content">
+    <div class="sidebar">
+      <button class="sidebar-btn">Due Today</button>
+      <button class="sidebar-btn">Due This Week</button>
+      <h1>Categories:</h1>
+      <button class="sidebar-btn">+Add a category</button>
+      <button class="sidebar-btn to-do-list-btn">To Do</button>
+    </div>
+    <div class="innerContent">
+      <header class="header">
+        <h1>My To Do List</h1>
+      </header>
+      <main class="main">
+
+        <h2 class="category">To Do</h2>
+
+
+        <form onsubmit="return false" class="form hidden" id="add-item-form" action="#">
+          <label for="todoitem" class="form-label">To do:</label>
+          <input type="text" name="todoitem" class="form-item">
+          <label for="duedate" class="form-label">Due date:</label>
+          <input type="date" name="duedate" class="form-item">
+          <button type="button" class="btn form-submit-btn">Submit</button>
+        </form>
+        <div class="list-display">
+        </div>
+        <button type="button" class="add-item-btn btn">+Add Item</button>
+      </main>
+      <footer class="footer">
+        <p>Copyright © 2023 dimray</p>
+      </footer>
+    </div>
+  </div>
   <script src="main.js"></script>
 </body>
 
