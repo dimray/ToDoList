@@ -16,12 +16,22 @@
 
 <body>
   <div id="content">
-    <div class="sidebar">
-      <button class="sidebar-btn">Due Today</button>
-      <button class="sidebar-btn">Due This Week</button>
-      <h1>Categories:</h1>
-      <button class="sidebar-btn">+Add a category</button>
-      <button class="sidebar-btn to-do-list-btn">To Do</button>
+    <div class="sidebar outer-sidebar">
+      <form action="#" onsubmit="return false" id="category-form" class="sidebar">
+        <h1>Categories:</h1>
+        <div class="sidebar inner-sidebar">
+          <button class="sidebar-btn category sidebar-cat-btn today">Due Today</button>
+          <button class="sidebar-btn category sidebar-cat-btn this-week">Due This Week</button>
+          <div class="category-div">
+            <button class="sidebar-btn to-do-list-btn category sidebar-cat-btn">To Do</button>
+
+          </div>
+        </div>
+        <button class="sidebar-btn add-new-category">+Add a category</button>
+        <input type="text" class="form-item input-category hidden" name="input-category">
+        <button class="btn add-category-btn hidden">Add</button>
+      </form>
+
     </div>
     <div class="innerContent">
       <header class="header">
@@ -29,9 +39,7 @@
       </header>
       <main class="main">
 
-        <h2 class="category">To Do</h2>
-
-
+        <h2 class="category-header">To Do</h2>
         <form onsubmit="return false" class="form hidden" id="add-item-form" action="#">
           <label for="todoitem" class="form-label">To do:</label>
           <input type="text" name="todoitem" class="form-item">

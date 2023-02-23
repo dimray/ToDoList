@@ -66,14 +66,58 @@ header {
   border: 2px solid white;
 }
 
+.form {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
+
+.form-item {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-label {
+  color: var(--font-color-light);
+  display: grid;
+}
+
 .sidebar {
   color: var(--font-color-dark);
   background-color: var(--background-light);
-  height: 100vh;
-  padding: 30px;
+  /* height: 100vh; */
+  /* padding: 30px; */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border: 1px solid pink;
+}
+
+.outer-sidebar {
+  padding: 30px;
+  border 2px solid blue;
+}
+
+.category-div {
+  display: flex;
+
+}
+
+.sidebar-cat-btn {
+  flex: 1;
+}
+
+.del-category-btn {
+  border: none;
+  background-color: var(--background-light);
+  font-size: 25px;
+}
+
+.del-category-btn:hover {
+  background-color: grey;
 }
 
 .sidebar-btn {
@@ -120,32 +164,21 @@ header {
   margin: 20px;
 }
 
-.category {
+.add-category-btn {
+  color: var(--font-color-dark);
+}
+
+.add-category-btn:hover {
+  background-color: #bef264;
+}
+
+.category-header {
   text-align: center;
   color: white;
   text-decoration: underline;
   margin-bottom: 20px;
 }
 
-.form {
-  display: grid;
-  justify-self: center;
-  grid-template-columns: 100%;
-  gap: 15px;
-}
-
-.form-item {
-  padding: 10px 25px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-
-}
-
-.form-label {
-  color: var(--font-color-light);
-  display: grid;
-}
 
 .checkbox {
   margin-left: 10px;
@@ -186,6 +219,10 @@ header {
 .listBtn:hover {
   background-color: var(--background-medium);
   color: var(--font-color-light);
+}
+
+#category-form .category {
+  background-color: blue;
 }
 
 .hidden {
